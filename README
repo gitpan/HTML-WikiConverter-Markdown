@@ -29,6 +29,14 @@ To install this module, run the following commands:
     make test
     make install
 
+For test coverage metrics run:
+
+    perl Makefile.PL
+    make
+    cover -delete
+    make test HARNESS_PERL_SWITCHES=-MDevel::Cover
+    cover
+
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the perldoc command.

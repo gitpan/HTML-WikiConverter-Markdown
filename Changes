@@ -1,4 +1,12 @@
 # Revision history for HTML::WikiConverter::Markdown
+date: 5 Aug 2014
+version: 0.06
+changes:
+  - (bug #97384) Quote inline link titles
+  - (bug #97385) Support heading IDs
+  - (bug #97450) Support PRE and DIV
+  - (bug #56769) Add newline after <br />
+  - Add support for MarkDown Extra table & dl extensions.
 
 date: 2009-03-16
 version: 0.05

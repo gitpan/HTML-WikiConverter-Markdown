@@ -90,7 +90,7 @@ inline link ::link_style('inline')
 __H__
 <p>It's called <a href="http://en.wikipedia.org/wiki/Long-term_potentiation" title="Long-term potentiation">LTP</a>.</p>
 __W__
-It's called [LTP](http://en.wikipedia.org/wiki/Long-term_potentiation Long-term potentiation).
+It's called [LTP](http://en.wikipedia.org/wiki/Long-term_potentiation "Long-term potentiation").
 __NEXT__
 reference link ::link_style('reference')
 __H__
@@ -162,7 +162,7 @@ Image goes below:</p>
 
 <p><img src="http://example.com/logo.png" alt="Logo"/></p>
 __W__
-Link goes [Here](http://example.com Link to example.com). Image goes below:
+Link goes [Here](http://example.com "Link to example.com"). Image goes below:
 
 ![Logo](http://example.com/logo.png)
 __NEXT__
@@ -457,3 +457,36 @@ __W__
     if( chomp( my $foo = <> ) ) {
       print "entered: $foo\n";
     }
+__NEXT__
+DIV
+__H__
+<div>outer div<div>nested div</div></div>
+__W__
+outer div
+
+nested div
+__NEXT__
+PRE
+__H__
+<pre>this is
+	a 
+pre
+</pre>
+__W__
+	this is
+		a
+	pre
+__NEXT__
+Heading with ID
+__H__
+<h1 id="linkhere">my heading</h1>
+__W__
+# my heading	{#linkhere}
+__NEXT__
+BR
+__H__
+need to add a new line between here<br /> and here
+__W__
+need to add a new line between here<br />
+ and here
+
